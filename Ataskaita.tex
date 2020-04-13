@@ -1,0 +1,73 @@
+\documentclass{VUMIFPSkursinis}
+\usepackage[printonlyused, withpage]{acronym}
+\usepackage[export]{adjustbox}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[toc,title,titletoc]{appendix}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage[acronym, toc, shortcuts, nonumberlist]{glossaries}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage{subfig}
+\usepackage{todonotes}
+\usepackage{wrapfig}
+
+\graphicspath{{img/}}
+
+
+% Use “\cite{NEEDED}” to get Wikipedia-style “citation needed” in document
+\usepackage{ifthen}
+\let\oldcite=\cite
+\renewcommand\cite[1]{\ifthenelse{\equal{#1}{NEEDED}}{\ensuremath{^\texttt{[citation~needed]}}}{\oldcite{#1}}}
+\newcommand{\fixme}{\texttt{[\#FIXME]}}
+
+
+% Titulinio aprašas
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+\department{Programų sistemų bakalauro studijų programa}
+\papertype{}%{Profesinės praktikos ataskaita}
+\title{Praktikos ataskaita}
+\titleineng{}%{Report on Professional Work Practice in the Company Addition Solutions}
+\status{4 kurso X grupės studentas}
+\author{Studentas Studentautojas}
+\companyname{UAB „Programita“}
+\supervisor{J. Asist. Dėtytojas Dėstytuvas}
+\reviewerstatus{kodo programuotojass}
+\reviewer{Vardenis Pavardenis}
+
+\date{Vilnius – \the\year}
+
+% Nustatymai
+\setmainfont{Palemonas} % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
+\bibliography{bibliografija}
+
+\begin{document}
+\maketitle
+\addtocounter{page}{1}
+\tableofcontents
+
+\section{Įvadas}
+
+\section{Įmonės apibūdinimas}
+
+\section{Praktikos veiklos aprašymas}
+
+\section{Rezultatai, išvados ir pasiūlymai}
+		
+\printbibliography[heading=bibintoc]
+
+\end{document}
+
+
